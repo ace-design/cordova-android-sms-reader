@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
-        version="0.7.0">
+        id="me.jeremyf.cordova.sms"
+        version="0.0.1">
 
     <name>AndroidSMSReader</name>
 
