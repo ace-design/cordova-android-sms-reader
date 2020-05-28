@@ -22,7 +22,7 @@ public class Reader extends CordovaPlugin {
      * @return
      * @throws JSONException
      */
-    @Override
+//    @Override
     public void execute(String action, JSONArray data, CallbackContext callbackContext)
             throws JSONException {
         switch (action) {
