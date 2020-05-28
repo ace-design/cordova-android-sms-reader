@@ -1,4 +1,4 @@
-package me.jeremyf.cordova.sms
+package me.jeremyf.cordova.sms;
 
 import android.Manifest;
 
