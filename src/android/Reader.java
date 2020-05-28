@@ -23,7 +23,7 @@ public class Reader extends CordovaPlugin {
      * @throws JSONException
      */
     @Override
-    public boolean execute(String action, JSONArray data, CallbackContext callbackContext)
+    public void execute(String action, JSONArray data, CallbackContext callbackContext)
             throws JSONException {
         switch (action) {
             case "permission":
