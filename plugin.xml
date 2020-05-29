@@ -24,7 +24,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/Reader.java" target-dir="src/me/jeremyf/cordova/sms/"/>
+        <source-file src="src/android/Reader.java" target-dir="src/me/jeremyf/cordova/sms"/>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.READ_SMS" />
