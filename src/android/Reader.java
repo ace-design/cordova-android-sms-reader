@@ -37,7 +37,7 @@ public class Reader extends CordovaPlugin {
                 callbackContext.success("sms");
             break;
         }
-        return false;
+        return true;
     }
 
     public boolean ensurePermission() {
