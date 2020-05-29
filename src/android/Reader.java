@@ -12,6 +12,11 @@ public class Reader extends CordovaPlugin {
             Manifest.permission.READ_SMS
     };
 
+    public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+        super.initialize(cordova, webView);
+    }
+
+
     /**
      * @param action          permission OR read
      * @param data            [] for permission  OR [IN, FILTER]
