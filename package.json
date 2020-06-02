@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/cordova": "0.0.34",
     "cordova-plugin-whitelist": "^1.3.4",
+    "husky": "^4.2.5",
     "typescript": "^3.9.3"
   },
   "cordova": {
@@ -43,5 +44,4 @@
   "browserslist": [
     "last 1 Chrome versions"
   ]
-
 }
