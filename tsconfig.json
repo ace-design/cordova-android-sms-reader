@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ES2015",
+        "outDir": "./www/tsdist",
+        "declarationDir": "./www",
+        "declaration": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "ES2015",
+        "lib": [
+            "es2015",
+            "dom"
+        ]
+    },
+    "include": [
+        "./ts/reader.ts"
+    ]
+}

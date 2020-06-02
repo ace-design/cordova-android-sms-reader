@@ -9,22 +9,38 @@
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <asset src="www/reader.js" target="js/reader.js"/>
-
-    <js-module src="www/reader.js" name="reader">
-        <clobbers target="reader" />
+<!--    <asset src="www/reader.js" target="js/reader.js"/>-->
+<!--    <js-module src="www/reader.js" name="reader">-->
+<!--        <clobbers target="reader" />-->
+<!--    </js-module>-->
+    <asset src="www" target="js"/>
+    <js-module src="www/reader.js" name="smsreader">
+        <clobbers target="smsreader" />
     </js-module>
+
 
 
     <platform name="android">
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AndroidSMSReader">
-                <param name="android-package" value="me.jeremyf.cordova.sms.Reader"/>
+                <param name="android-package" value="me.jeremyf.cordova.sms.SMSReader"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Reader.java" target-dir="src/me/jeremyf/cordova/sms"/>
+        <source-file src="src/android/me/jeremyf/cordova/sms/SMSReader.java"
+                     target-dir="src/me/jeremyf/cordova/sms"/>
+        <!-- Actions -->
+        <source-file src="src/android/me/jeremyf/cordova/sms/action/Action.java"
+                     target-dir="src/me/jeremyf/cordova/sms/action"/>
+        <source-file src="src/android/me/jeremyf/cordova/sms/action/PermissionAction.java"
+            target-dir="src/me/jeremyf/cordova/sms/action"/>
+        <source-file src="src/android/me/jeremyf/cordova/sms/action/ReadAction.java"
+                     target-dir="src/me/jeremyf/cordova/sms/action"/>
+        <!-- Model -->
+        <source-file src="src/android/me/jeremyf/cordova/sms/model/SMS.java"
+                     target-dir="src/me/jeremyf/cordova/sms/model"/>
+
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.READ_SMS" />
