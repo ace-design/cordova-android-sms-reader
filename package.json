@@ -1,8 +1,8 @@
 {
-  "name": "me.jeremyf.cordova.sms",
+  "name": "cordova-android-sms-reader",
+  "version": "0.0.1",
   "displayName": "Cordova Android SMS Reader",
-  "version": "1.0.0",
-  "description": "A sample Apache Cordova application that give to the sms using Android Inbox",
+  "description": "A sample Apache Cordova application that give to the sms using Android",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "Jérémy Fornarino (j4yf7o)",
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
@@ -31,7 +31,17 @@
       "android"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/J4YF7O/cordova-android-sms-reader.git"
+  },
+  "bugs": {
+    "email": "j4yf7o@protonmail.com",
+    "url": "https://github.com/J4YF7O/cordova-android-sms-reader/issues"
+  },
+  "homepage": "https://github.com/J4YF7O/cordova-android-sms-reader#readme",
   "browserslist": [
     "last 1 Chrome versions"
   ]
+
 }
