@@ -19,11 +19,11 @@ export default class SMSResult {
 
     /**
      * Filter SMS checking phone numbers
-     * @param phoneNumbers
+     * @param pN
      */
-    public withPhoneNumbers(...phoneNumbers: string[]): SMSResult {
+    public withPhoneNumbers(...pN: string[]): SMSResult {
         return this.filter((sms) => {
-            return phoneNumbers.indexOf(sms.address) >= 0;
+            return pN.indexOf(sms.address) >= 0;
         });
     }
 
