@@ -11,9 +11,9 @@ export default class SMSResult {
     filter(callbackFn: (sms: SMS) => boolean): SMSResult;
     /**
      * Filter SMS checking phone numbers
-     * @param phoneNumbers
+     * @param pN
      */
-    withPhoneNumbers(...phoneNumbers: string[]): SMSResult;
+    withPhoneNumbers(...pN: string[]): SMSResult;
     /**
      *
      * @param search
