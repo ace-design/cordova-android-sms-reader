@@ -14,13 +14,6 @@ deploy:
     tag: latest
     on:
       branch: master
-  - provider: npm
-    email: jeremy.fornarino@gmail.com
-    api_key: $NPM_API_KEY
-    tag: test-for-travis
-    on:
-      all_branches: true
-
 
 env:
   global:
