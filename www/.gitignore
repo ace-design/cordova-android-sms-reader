@@ -2,5 +2,6 @@
 *
 # Except this file
 !.gitignore
+!.npmignore
 
 # More : https://stackoverflow.com/questions/115983/how-can-i-add-an-empty-directory-to-a-git-repository

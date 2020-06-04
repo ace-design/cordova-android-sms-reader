@@ -9,3 +9,6 @@ README.*.md
 !www/
 !www/**/*.js
 !www/**/*.ts
+
+.idea
+.cache
