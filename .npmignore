@@ -5,3 +5,7 @@ scripts
 node_modules
 README.*.md
 .travis.yml
+
+!www/
+!www/**/*.js
+!www/**/*.ts
