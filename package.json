@@ -6,20 +6,21 @@
     "main": "www/reader.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "declare": "tsc && rm -rf ./www/tsdist",
+        "declare": "tsc && rimraf www/tsdist",
         "parcel-build": "parcel build ts/reader.ts -d www",
-        "clean": "(rm -r www/* || true)",
+        "clean": "rimraf www/*",
         "build": "yarn clean &&  yarn parcel-build && yarn declare"
     },
     "keywords": [
         "ecosystem:cordova"
     ],
-    "author": "Jérémy Fornarino (j4yf7o) For Ace",
+    "author": "Jérémy Fornarino (j4yf7o) For ace",
     "license": "Apache-2.0",
     "dependencies": {
+        "@types/cordova": "0.0.34",
         "cordova-android": "^8.1.0",
         "parcel-bundler": "^1.12.4",
-        "@types/cordova": "0.0.34",
+        "rimraf": "^3.0.2",
         "typescript": "^3.9.3"
     },
     "devDependencies": {
