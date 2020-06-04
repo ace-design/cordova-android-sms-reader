@@ -1,0 +1,7 @@
+ts
+tsconfig.json
+scripts
+
+node_modules
+README.*.md
+.travis.yml
