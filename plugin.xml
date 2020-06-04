@@ -9,10 +9,7 @@
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-<!--    <asset src="www/reader.js" target="js/reader.js"/>-->
-<!--    <js-module src="www/reader.js" name="reader">-->
-<!--        <clobbers target="reader" />-->
-<!--    </js-module>-->
+    <hook type="after_plugin_add" src="scripts/build_app.js" />
     <asset src="www" target="js"/>
     <js-module src="www/reader.js" name="smsreader">
         <clobbers target="smsreader" />
