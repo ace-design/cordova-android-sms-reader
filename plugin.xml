@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="cordova-android-sms-reader"
-        version="0.0.1">
+        version="0.0.2"
+>
 
     <name>AndroidSMSReader</name>
 
@@ -9,10 +10,7 @@
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-<!--    <asset src="www/reader.js" target="js/reader.js"/>-->
-<!--    <js-module src="www/reader.js" name="reader">-->
-<!--        <clobbers target="reader" />-->
-<!--    </js-module>-->
+    <hook type="after_plugin_add" src="scripts/build_app.js" />
     <asset src="www" target="js"/>
     <js-module src="www/reader.js" name="smsreader">
         <clobbers target="smsreader" />
