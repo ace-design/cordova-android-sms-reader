@@ -9,7 +9,8 @@
         "declare": "tsc && rimraf www/tsdist",
         "parcel-build": "parcel build ts/reader.ts -d www",
         "clean": "rimraf www/*",
-        "build": "yarn clean &&  yarn parcel-build && yarn declare"
+        "build": "yarn clean &&  yarn parcel-build && yarn declare",
+        "prepublishOnly": "yarn build"
     },
     "keywords": [
         "ecosystem:cordova"
