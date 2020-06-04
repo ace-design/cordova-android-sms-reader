@@ -9,7 +9,7 @@
         "declare": "tsc && rm -rf ./www/tsdist",
         "parcel-build": "parcel build ts/reader.ts -d www",
         "clean": "(rm -r www/* || true)",
-        "build": "npm run clean &&  npm run parcel-build && npm run declare"
+        "build": "yarn clean &&  yarn parcel-build && yarn declare"
     },
     "keywords": [
         "ecosystem:cordova"
