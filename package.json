@@ -10,7 +10,7 @@
         "parcel-build": "parcel build ts/reader.ts -d www",
         "clean": "rimraf www/*",
         "build": "yarn clean &&  yarn parcel-build && yarn declare",
-        "prepublishOnly": "yarn build"
+        "prepublishOnly": "yarn && yarn build"
     },
     "keywords": [
         "ecosystem:cordova"
