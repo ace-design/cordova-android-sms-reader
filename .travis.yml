@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "12.13"
+deploy:
+  - provider: npm
+    email: jeremy.fornarino@gmail.com
+    api_key: $NPM_API_KEY
+    tag: next
+    on:
+      branch: develop
+  - provider: npm
+    email: jeremy.fornarino@gmail.com
+    api_key: $NPM_API_KEY
+    tag: latest
+    on:
+      branch: master
+
+env:
+  global:
+    secure: bPjy2syLtGFgQTpz/Puq2z7oLJCbijEtlbXQQDb6pUIOEXEeOkpgbwP9QspqVyoZo8gTyt6ZC+yCtvrL24TiqBqMJsskmQOQql48FPfxv/Qa4PQLdeQZqIP42N7J0U9yQ+UkvwJiwTpZ5SfVUtIHRfGDmE+X2JEtCHBZ/i0yBWQ51tHL2BF5J2rrFYeFGnvEh9CNB7YJppogU5tbSrFE7q3E945PRKzf3MTtegtg47z/Zqjhv/MVhJuF8P0Tu58V1KX2cM2Sndhcb/L+ehllHpzg5jRBEUeb6IuhC2Rmn2MVsBIAjsgBNSYZDuy8O54qJw/mbQYm6jYa3OtVDtI5OQ1G2bA3SeEetsdj+jQujCOP8pGBE9UH5hNDVXgeEHoxTKo0PYQdiYt/DKZfMh0cYGq+HjO3w8Eu9jUlWJwUfRlTBQFy0nNpoQmaBD7pXBktN8+DdN49SiL6q1x775mW1fhhwEH2RAIIh7f2/GOUav2R9hqOPPntBwOFP3ba80RPCerp2q5G016xOZs6wt569wcUgQMfXR7yqPZ9bjrWTcIfnzntS3ma+TEcuxcwUMnlYaYsHP3XvuHrG2oGfMjnh/ocqVf5PVGRgWHPXdRVfR5QxONn9LSYcSOVG0AX8/bLxjlWSZsi9GUICd0GSKMUxQz+p/xFRQJRw7pwi+2m/lo=
