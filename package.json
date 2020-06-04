@@ -1,6 +1,6 @@
 {
     "name": "cordova-android-sms-reader",
-    "version": "0.0.2",
+    "version": "0.0.3-dev",
     "displayName": "Cordova Android SMS Reader",
     "description": "Apache Cordova plugin that give access to the sms for Android",
     "main": "www/reader.js",
